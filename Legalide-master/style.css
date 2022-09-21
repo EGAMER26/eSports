@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+:root {
+  font-size: 62.5%;
+  --secondary-color: #784f33;
+}
+
+* {
+  margin: 0 auto;
+  font-family: 'Martel', serif;
+}
+/*=====================NAV==================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 21.7px;
+
+  z-index: 5;
+  margin: auto;
+  top: -1px;
+  width: 100vw;
+  padding-bottom: 24px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 100%;
+}
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: orange;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .hidden {
+    overflow: hidden;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+
+  nav {
+    padding-bottom: 28px;
+    background: #f2f2f2;
+    position: fixed;
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #f6f6f6;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s;
+    z-index: 3;
+    overflow: hidden;
+  }
+  nav ul.open {
+    left: 0;
+  }
+  nav ul li {
+    /* width: 100%; */
+    margin: 50px 0;
+  }
+  nav ul li a {
+    font-size: 23px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background-color: none;
+    color: #784f33;
+  }
+}
+
+.sticky {
+  background-color: rgb(90, 34, 34);
+}
+
+.search-icon {
+  padding-right: 6px;
+}
+
+/* div.menu-btn {
+  position: absolute;
+  right: 37px;
+  top: 29.6px; 
+}*/
+
+/*===================== Body, Main================ */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /* width: 100%; */
+  min-width: 370px;
+  margin: auto;
+
+  font-size: 1.6rem;
+}
+
+.get {
+  background-color: #784f33;
+  color: #fff;
+  width: 18.2rem;
+  height: 4.9rem;
+  border-radius: 3.7rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-family: 'Open Sans';
+}
+
+.learn {
+  width: 15.5rem;
+  height: 4.8rem;
+  border-radius: 3.7rem;
+  margin-top: 2rem;
+  border: solid 1px #784f33;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: open sans;
+}
+main {
+  /* nav { */
+  background-image: url(assets/cover.png);
+  width: 100%;
+}
+
+main center {
+  padding: 2.5rem;
+}
+
+.mulher {
+  padding-top: 70px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1rem;
+  z-index: 2;
+}
+
+.sessão2 h1 {
+  font-family: 'Martel';
+}
+/* ======================Section2================= */
+.cards {
+  flex-direction: column;
+  display: flex;
+
+  text-align: center;
+  width: 32.9rem;
+  height: 45rem;
+}
+
+.card {
+  background: #f9f9f9;
+  margin-bottom: 5rem;
+  width: 32.9rem;
+  height: 50.1rem;
+  border-radius: 0.5rem;
+  padding-top: 2rem;
+}
+
+.card2 {
+  background: #295c7a;
+  color: #fff;
+
+  width: 32.9rem;
+  height: 50.1rem;
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+header h1 {
+  padding-top: 13rem;
+}
+
+header p {
+  margin-bottom: 3rem;
+}
+
+main h2 {
+  padding-top: 70px;
+}
+
+.cartoes img {
+  width: 100%;
+  height: 144px;
+  margin: 0;
+}
+
+.cartao {
+  justify-content: center;
+  padding-bottom: 160px;
+  gap: 3px;
+  background-color: #f3f3f3;
+}
+.cartoes {
+  display: flex;
+  flex-direction: column;
+  width: 23.8rem;
+  height: 31.7rem;
+  background-color: #ffffff;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Practice .cartoes p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.advice {
+  margin-top: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rem;
+  background-color: #f2f2f2;
+}
+
+.advice p {
+  font-size: 13px;
+  margin-top: 10px;
+  font-family: 'Martel';
+}
+
+.advice h2 {
+  font-size: 4rem;
+  margin-top: 70px;
+  color: #252b42;
+  font-family: 'Martel';
+}
+.advice h3 {
+  color: #252b42;
+}
+/* ===============Containers =============== */
+.container {
+  display: flex;
+
+  gap: 1.4rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container h4 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.container p {
+  margin: 0 auto;
+  padding-left: 4rem;
+}
+
+.grouping {
+  margin: auto;
+}
+
+html p {
+  color: #737373;
+}
+
+.p {
+  align-items: center;
+  padding-left: 22px;
+  margin: auto;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homem {
+  width: 300px;
+}
+
+#about h2 {
+  margin-top: 8rem;
+  font-size: 40px;
+  font-family: 'Martel';
+}
+
+#about p {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.container img {
+  margin: 0;
+}
+
+#logos {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
+  background-color: #fafafa;
+  margin-top: 13rem;
+  padding-top: 4rem;
+}
+
+#group-input {
+  background: rgb(0, 114, 181);
+  background: linear-gradient(
+    36deg,
+    rgba(0, 114, 181, 1) 0%,
+    rgba(41, 92, 122, 1) 100%
+  );
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+  width: 100%;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+#group-input h3 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+label input[type='email'] {
+  margin: 0;
+  width: 270px;
+  height: 58px;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#group-input button {
+  background-color: #d0a144;
+  top: 0;
+  position: absolute;
+  right: 0;
+  height: 57px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  width: 100px;
+}
+
+label {
+  position: relative;
+}
+/* =============== CARD CONTACT========================*/
+.cardct1,
+.cardct2,
+.cardct3 {
+  height: 350px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  padding: 30px;
+}
+
+.cardct1 {
+  background-color: #ffffff;
+}
+
+.cardct2 {
+  background-color: #252b42;
+  color: #ffffff;
+}
+.cardct2 a {
+  color: #ffff;
+  background: transparent;
+}
+.cardct3 a {
+  color: black;
+  background: transparent;
+}
+.cardct1 a {
+  color: black;
+  background: transparent;
+}
+.cardct3 {
+  background-color: #ffffff;
+}
+
+#contact {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  margin-bottom: 3rem;
+}
+
+.cardct {
+  text-align: center;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+.cardct h2 {
+  font-family: 'Martel';
+}
+#contact button {
+  color: #d0a144;
+  border: 1px solid #d0a144;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+}
+
+.cardct3 {
+  margin-bottom: 8rem;
+}
+/* footer */
+
+#contactus {
+  margin: 0 auto;
+
+  width: 250px;
+  height: 280px;
+}
+#contact h5 {
+  font-family: 'Martel';
+  margin-bottom: 1rem;
+}
+/* ===================Request========== */
+#btnus {
+  background-color: #784f33;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+
+  border: none;
+  color: #fff;
+}
+
+#btnus a {
+  color: #fff;
+}
+/*=================Footer=================== */
+#Links {
+  height: 908px;
+  margin: 0 auto;
+  width: 260px;
+  list-style: none;
+  width: 100%;
+  background: linear-gradient(
+    36deg,
+    rgba(33, 166, 223, 1) 54%,
+    rgba(51, 91, 245, 1) 90%
+  );
+
+  color: #fff;
+  padding: 6rem;
+}
+
+.link ul {
+  list-style: none;
+  padding-right: 8px;
+  gap: 3px;
+}
+
+#Links a {
+  color: #fff;
+  font-family: 'Open Sans';
+}
+
+.link {
+  margin-bottom: 3rem;
+}
+
+.class img {
+  color: #ffff;
+  width: 32px;
+}
+
+.plane-mail,
+.tel,
+.localization {
+  width: 30px;
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.link h3 {
+  font-family: 'Martel';
+}
+
+.social-links h3 {
+  font-family: 'Martel';
+  font-size: 14px;
+
+  margin: auto;
+  width: 60%;
+  padding: 3rem;
+  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-links ul {
+  display: flex;
+  gap: 1rem;
+  padding-top: 2rem;
+  list-style: none;
+  margin: 0;
+}

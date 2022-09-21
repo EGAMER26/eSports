@@ -1,0 +1,55 @@
+<html> <!-- definindo a linguagem -->
+<head>
+	<title> Aula 01 - PWI </title> <!-- Titulo da páginagina/aba -->
+</head> <!-- Fecha o cabeçalho -->
+<body bgcolor="#66CDAA" text="#4B0082"> <!-- Abre o corpo da página -->
+<center>
+<marquee scrollamount="10" direction="right"> <!-- Vail e volta sobe e desce -->
+<!-- <img src="gigachad.png"  height="500" width="700"> -->
+</marquee>
+<b><u><i><h1> CADASTRO DE CLIENTES </h1></i></u>
+</marquee>
+</center>
+<form name="frm_cadastro"> <!-- Declarando a tag q estou trabalhando -->
+<fieldset>
+	<legend>Dados Pessoais</legend>
+	Nome do Cliente:<br> <!-- tag "br" é quebra de linha -->
+	<input type="text" value="" size="100" maxlength="60" required><p> <!-- p indica um novo paragrafo --> <!-- required dados obrigatorios -->
+	Senha:
+	<input type="password" value="" size"20" maxlength="20"> &nbsp;&nbsp;&nbsp;&nbsp; <!-- &nbsp atribui espaço -->
+	Selecione a Sua Idade:
+	<input type="number" min="1" max="100" value="" size"20" maxlength="20"> &nbsp;&nbsp;&nbsp;
+	Sexo:
+	<input type="radio" name="genero">Masculino <!-- radio seleção única -->
+	<input type="radio" name="genero">Feminino <p>
+	Selecione algumas linguagens:<br>
+<ul> <!-- tag ol lista ordenada tag ul pontos -->
+	<li><input type="checkbox" name="linguagens">HTML </li> <!-- checkbox seleção multipla -->
+	<li><input type="checkbox" name="linguagens">CSS </li>
+	<li><input type="checkbox" name="linguagens">JAVASCRIPT </li>
+	<li><input type="checkbox" name="linguagens">PHP </li>
+</ul>
+<p>
+Selecione uma Cidade: <br>
+<select name="cidades"> <!-- caixao de opções -->
+	<option value="sa">Santo Andre</option>
+	<option value="sbc">Sao Bernanrdo do Campo</option>	
+	<option value="ma">Maua</option>
+	<option value="rp">Ribeirao Picles</option>
+</select>
+<p>
+Observacoes Gerais:<br>
+<textarea cols="100" rows="10">Digite aqui</textarea> <!-- caixa de comentários -->
+</fieldset><br>
+<fieldset>
+	<legend>Selecione Uma cor:</legend>
+	Modo Stealth<input type="radio" name="cor" onclick="document.bgColor='black'"> <!-- Evento onclick ou "ao clicar" -->
+	Volts<input type="radio" name="cor" onclick="document.bgColor='#66CDAA'">
+	Verdenildo<input type="radio" name="cor" onclick="document.bgcolor='#006400'">
+</fieldset>
+<center>
+<input type="submit" value="ENVIAR">&nbsp;&nbsp; <!-- Butão" -->
+<input type="reset" value="GER">&nbsp;&nbsp;
+</form>
+</body>
+</html>
